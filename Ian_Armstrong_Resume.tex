@@ -1,0 +1,130 @@
+% Copyright 2019 Matthew Felix Yuan
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+% 
+% The Current Maintainer of this work is Matthew Felix Yuan.
+%
+% This work consists of the files blank-template.tex and sample-resume.tex.
+
+
+
+\documentclass[11pt]{article}
+% helpful packages.
+\usepackage{geometry}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+% global formatting tweaks.
+\pagestyle{empty}
+\geometry{margin=0.5in}
+\setlength\parindent{9pt}
+\setlist{nosep}
+\renewcommand\labelitemi{--}
+% new commands!
+\newcommand{\name}[1]{\begin{center}\section*{\huge #1}\end{center}}
+\newcommand{\topinfo}[1]{\begin{center}\vspace{-0.2cm}#1\vspace{-0.2cm}\end{center}}
+\newcommand{\resumesection}[1]{\vspace{-0.2cm}\section*{#1}\vspace{-0.2cm}\hrule\vspace{0.2cm}}
+
+
+
+
+
+
+\begin{document}
+
+% \name is self-explanatory. \topinfo is for things like social media, email, phone number, address, etc.
+\name{Ian Wesley Armstrong}
+\topinfo{www.linkedin.com/in/ianwesleyarmstrong}
+%\topinfo{www.github.com/ianwesleyarmstrong}
+\topinfo{ianwesleyarmstrong@gmail.com}
+\topinfo{(913) 908-2249}
+
+% name your resume sections whatever you want!
+\resumesection{Education}
+% things written after \hfill will be right-aligned, which is where i usually put dates.
+\textbf{Kansas State University} \hfill Manhattan, Kansas \hfill Expected May 2021  
+
+% each \item is a point you want to say about the thing.
+\textit{Bachelor of Science in Computer Science and Applied Mathematics}
+\begin{itemize}
+	\item 3.56 GPA
+	\item Deans's List
+\end{itemize}
+
+% fill your sections with things!
+\textbf{Czech Technical University} \hfill Prague, Czechia \hfill January 2019 - May 2019 
+
+\textit{Bachelor of Science in Information Technology }
+\begin{itemize}
+	\item Relevant Coursework: Data Mining, Introduction to Artifical Intelligence, Database Systems
+\end{itemize}
+
+% fill your resume with sections!
+\resumesection{Experience}
+\textbf{Commerce Bancshares}\hfill{IT Intern (DevOps/ETL)}\hfill{June - Present} 
+
+\textit{Enterprise Data Warehousing}
+\begin{itemize}
+	\item Automated build of containerized Data Science development environments using Puppet and Docker.
+	\item Build consistent environments with Anaconda to manage Python/R packages and connectivity to Teradata, SQL Server and Hive.
+	\item Implemented Airflow as a job scheduler, enabling Data Scientists to develop workflow graphs and create robust pipelines for implementing models into production.
+\end{itemize}
+
+\textbf{Kansas State University}\hfill{Undergraduate Research Assistant}\hfill{January 2018 - Febrary 2019} 
+
+\textit{Department of Biochemsitry and Molecular Biophysics}
+\begin{itemize}
+	\item Contributed to the development of ORGANIC, a Python/Tensorflow framework to generate novel molecules. 
+	\item ORGANIC utilizes Neural Networks coupled with an additional reinforcement learning component to bias generated compounds towards desired physical/chemical properties.
+	\item Decreased runtime of ORGANIC by 40\% by altering an algorithm to improve GPU memory usage, allowing for more efficient usage of our computing resources.
+\end{itemize}
+
+\resumesection{Projects}
+\textbf{Data Warehouse}
+\begin{itemize}
+	\item Created a data warehouse for storing data about various financial instruments, including hourly forex data for 172 currency pairs.
+	\item All infastructure is hosted in Docker containers, and Airflow is used to manage all ETL processes.
+	\item Time-series data is stored in TimescaleDB, while unstructured data is stored in HDFS.
+\end{itemize}
+
+\textbf{Ant Colony Optimization}
+\begin{itemize}
+	\item Implented Ant Colony Optimization heuristic in Python to find the shortest path between 1000 U.S. Cities.
+	\item The shortest path is visualized by plotting each city in the order visited with a color gradient corresponding to the order.
+\end{itemize}
+
+% \textbf{Loan Classifaction}
+% \begin{itemize}
+% 	\item 
+% \end{itemize}
+
+\resumesection{Skills and Training}
+\begin{itemize}
+	\item \textbf{Languages:} Python, Bash, SQL, Java, Ruby, R, Scala, C\#, C/++, MATLAB
+	\item \textbf{Frameworks/Packages:} Puppet, Docker, Airflow, TensorFlow, Hive, AWS, Git, Artifactory
+	%\item \textbf{Packages:} Pandas, Airflow, TensorFlow, Dask, TensorFlow, SciKit-Learn, Flask
+	% \item \textbf{MOOC's:} Machine Learning by Andrew Ng, Sabermetrics 101: Introduction to Baseball Analytics, 
+\end{itemize}
+
+\resumesection{Extracurriculars and Awards}
+\begin{itemize}
+	\item College of Arts \& Sciences Undergraduate Research Award
+	\item Delta Sigma Phi Fraternity - Director of Design | Responsible for designing apparel for 120 Members
+	\item Association for Computing Machinery - Open House Chair 
+	\item Eagle Scout, Boy Scouts of America, 2014
+\end{itemize}
+
+
+
+
+
+% Don't delete this
+\end{document}
+
