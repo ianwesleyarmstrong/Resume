@@ -33,10 +33,6 @@
 \newcommand{\resumesection}[1]{\vspace{-0.2cm}\section*{#1}\vspace{-0.2cm}\hrule\vspace{0.2cm}}
 
 
-
-
-
-
 \begin{document}
 
 % \name is self-explanatory. \topinfo is for things like social media, email, phone number, address, etc.
@@ -72,30 +68,30 @@
 \textit{Enterprise Data Warehousing}
 \begin{itemize}
 	\item Automated build of containerized Data Science environments using Puppet, Kubernetes and Docker.
-	\item Environments are built using RHEL, using Anaconda to manage Python/R packages with database connectivity to Teradata, SQL Server, S3 and Hive.
-	\item Implemented Airflow as a job scheduler, enabling Data Scientists to develop workflow graphs and create robust pipelines for implementing models into production.
+	\item Environments are built on top of Red Hat Enterprise Linux, using Anaconda to manage Python/R packages with database connectivity to Teradata, SQL Server, S3 and Hive.
+	\item Implemented a job scheduler using Airflow, enabling Data Scientists to develop workflow graphs and create robust pipelines for implementing models into production.
 \end{itemize}
 
 \textbf{Kansas State University}\hfill{Undergraduate Research Assistant}\hfill{January 2018 - February 2019} 
 
-\textit{Department of Biochemistry and Molecular Biophysics}
+\textit{Johnson Cancer Research Center}
 \begin{itemize}
 	\item Contributed to the development of ORGANIC, a Python/Tensorflow framework to generate novel molecules. 
-	\item ORGANIC utilizes Neural Networks and Reinforcement Learning to bias generated compounds towards desired physical or chemical properties.
-	\item Decreased runtime of ORGANIC by 40\% on our compute cluster by altering an algorithm to improve GPU memory usage, allowing for more efficient usage of our computing resources.
+	\item ORGANIC uses Neural Networks and Reinforcement Learning to generate molecules with desired physical/chemical properties.
+	\item Decreased runtime of ORGANIC by 30\% on our HPC cluster by modifying the molecular encoding system, allowing for quicker development and testing cycles.
 \end{itemize}
 
 \resumesection{Projects}
 \textbf{Financial Data Warehouse}
 \begin{itemize}
-	\item Created a data warehouse for storing tick data about various financial instruments, including hourly forex exchange rates and securities present in major indexes.
+	\item Created a data warehouse for storing tick data about various financial instruments, including hourly Forex exchange rates and securities present in major indexes.
 	\item Infrastructure is managed by Kubernetes, with Airflow being used to schedule all ETL processes.
 	\item Time-series data is stored in TimescaleDB, while unstructured data is stored in HDFS.
 \end{itemize}
 
 \textbf{MLB Player Trade Evaluation}
 \begin{itemize}
-	\item Python Program that uses Logistic Regression and data collected using BeautifulSoup to determine if a player is likely to be traded based on their offensive/defensive statistics, salary, and length of contract.
+	\item Python Program that uses Logistic Regression to determine if a player is likely to be traded based on their historical offensive/defensive statistics, salary, and remaining length of contract.
 \end{itemize}
 
 
@@ -111,9 +107,9 @@
 
 \resumesection{Skills and Training}
 \begin{itemize}
-	\item \textbf{Languages:} Python, Bash, SQL, C/++, Java, Ruby, R, Scala, C\#, MATLAB
+	\item \textbf{Languages:} Python, SQL, C/++, Ruby Java, C\#, R, Julia, MATLAB, Bash
 	\item \textbf{Frameworks/Packages:} Puppet, Docker, Airflow, Kubernetes, SciKit-Learn, TensorFlow, Spark
-	\item \textbf{MOOC's:} Python for Data Science, Functional Programming in Scala, Machine Learning by Andrew Ng
+	\item \textbf{MOOC's:} Python for Data Science, Scientific Programming in Julia, Machine Learning by Andrew Ng
 \end{itemize}
 
 \resumesection{Extracurriculars and Awards}
