@@ -45,10 +45,10 @@
 % name your resume sections whatever you want!
 \resumesection{Education}
 % things written after \hfill will be right-aligned, which is where i usually put dates.
-\textbf{Kansas State University} \hfill Manhattan, Kansas \hfill Expected May 2021  
+\textbf{Kansas State University} \hfill Manhattan, Kansas \hfill Expected December 2021  
 
 % each \item is a point you want to say about the thing.
-\textit{Bachelor of Science in Computer Science and Applied Mathematics}
+\textit{Bachelor of Science in Computer Science and Applied Mathematics, Minor in Statistics}
 \begin{itemize}
 	\item 3.56 GPA
 \end{itemize}
@@ -57,36 +57,42 @@
 \textbf{Czech Technical University} \hfill Prague, Czechia \hfill January 2019 - May 2019 
 
 \textit{Bachelor of Science in Information Technology }
-\begin{itemize}
-	\item Relevant Coursework: Data Mining, Introduction to Artificial Intelligence, Database Systems
-\end{itemize}
+% \begin{itemize}
+% 	\item Relevant Coursework: Data Mining, Introduction to Artificial Intelligence, Database Systems
+% \end{itemize}
 
 % fill your resume with sections!
 \resumesection{Experience}
-\textbf{Commerce Bancshares}\hfill{IT Intern (DevOps/ETL)}\hfill{June - Present} 
+\textbf{Commerce Bancshares}\hfill{IT Intern (DevOps)}\hfill{June 2019 - Present} 
 
 \textit{Enterprise Data Warehousing}
 \begin{itemize}
-	\item Automated build of containerized Data Science environments using Puppet, Kubernetes and Docker.
+	\item Automated build of containerized Data Science environments using Puppet and Docker.
 	\item Environments are built on top of Red Hat Enterprise Linux, using Anaconda to manage Python/R packages with database connectivity to Teradata, SQL Server, S3 and Hive.
-	\item Implemented a job scheduler using Airflow, enabling Data Scientists to develop workflow graphs and create robust pipelines for implementing models into production.
+\end{itemize}
+
+\textbf{Kansas State University}\hfill{Undergraduate Research Assistant}\hfill{August 2019 - Present} 
+
+\textit{Department Of Finance}
+\begin{itemize}
+	\item Researching the correlation between a limit order book made from Nasdaq's ITCH data and tweets mentioning stock tickers to see if tweets about small cap stocks can be used to manipulate volume or price.
+	\item Analysis is performed on K-State's HPC cluster using Spark, Pandas and StatsModels.
 \end{itemize}
 
 \textbf{Kansas State University}\hfill{Undergraduate Research Assistant}\hfill{January 2018 - February 2019} 
 
 \textit{Johnson Cancer Research Center}
 \begin{itemize}
-	\item Contributed to the development of ORGANIC, a Python/Tensorflow framework to generate novel molecules. 
-	\item ORGANIC uses Neural Networks and Reinforcement Learning to generate molecules with desired physical/chemical properties.
-	\item Decreased runtime of ORGANIC by 30\% on our HPC cluster by modifying the molecular encoding system, allowing for quicker development and testing cycles.
+	\item Contributed to the development of ORGANIC, a Python/Tensorflow framework to generate novel molecules using Neural Networks and Reinforcement Learning to generate compounds with desired chemical properties.
+	\item Decreased run time of ORGANIC by 20\% by optimizing memory usage across nodes of a HPC cluster.
 \end{itemize}
 
 \resumesection{Projects}
 \textbf{Financial Data Warehouse}
 \begin{itemize}
-	\item Created a data warehouse for storing tick data about various financial instruments, including hourly Forex exchange rates and securities present in major indexes.
-	\item Infrastructure is managed by Kubernetes, with Airflow being used to schedule all ETL processes.
-	\item Time-series data is stored in TimescaleDB, while unstructured data is stored in HDFS.
+	\item Created a data warehouse for storing tick data about various financial instruments, including hourly Forex exchange rates and securities present in major stock indexes.
+	\item Infrastructure is managed by Docker Swarm, with Airflow being used to schedule all ETL processes.
+%	\item Time-series data is stored in TimescaleDB, while unstructured data is stored in HDFS.
 \end{itemize}
 
 \textbf{MLB Player Trade Evaluation}
@@ -107,17 +113,18 @@
 
 \resumesection{Skills and Training}
 \begin{itemize}
-	\item \textbf{Languages:} Python, SQL, C/++, Ruby Java, C\#, R, Julia, MATLAB, Bash
-	\item \textbf{Frameworks/Packages:} Puppet, Docker, Airflow, Kubernetes, SciKit-Learn, TensorFlow, Spark
+	\item \textbf{Languages:} Python, SQL, C/++, Ruby, Java, C\#, R, Julia, Puppet, MATLAB, Bash
+	\item \textbf{Packages:} TensorFlow, Spark, Dask, Docker, Airflow, Kubernetes, SciKit-Learn, StatsModels
 	\item \textbf{MOOC's:} Python for Data Science, Scientific Programming in Julia, Machine Learning by Andrew Ng
 \end{itemize}
 
 \resumesection{Extracurriculars and Awards}
 \begin{itemize}
-	\item College of Arts \& Sciences Undergraduate Research Award
-	\item Delta Sigma Phi Fraternity - Director of Design \& Apparel 
 	\item Association for Computing Machinery - Open House Chair 
 	\item Mathematical Modelling Seminar
+	\item Center for Risk Management Student Fellow
+	\item Directed Reading Program - A Primer For The Mathematics Of Financial Engineering
+	\item College of Arts \& Sciences Undergraduate Research Award
 	\item Eagle Scout, Boy Scouts of America, 2014
 \end{itemize}
 
